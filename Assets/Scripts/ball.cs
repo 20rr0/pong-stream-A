@@ -11,7 +11,7 @@ public class ball : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Xposition = Random.Range(-10.0f, 10.0f);
+        //Xposition = Random.Range(-10.0f, 10.0f);
         transform.position = new Vector3(Xposition, Yposition, 0);
         
     }
