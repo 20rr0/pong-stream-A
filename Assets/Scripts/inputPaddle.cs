@@ -11,11 +11,11 @@ public class inputPaddle : MonoBehaviour
     //function that handles movement and has variables for up and down keycode?
     void setKeyAndMovement(KeyCode up, KeyCode down)
     {
-        if (Input.GetKey(up))
+        if (Input.GetKey(up) && transform.position.y <= 3.6f)
         {
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
-        else if (Input.GetKey(down))
+        else if (Input.GetKey(down) && transform.position.y >= -3.6f)
         {
             transform.Translate(Vector3.down * speed * Time.deltaTime);
         }
